@@ -1,11 +1,10 @@
 package main
 
 func main() {
-	cards := newDeck()
+	cards := newDeckFromFile("my_cards2")
+	cards.print()
 
-	hand, remainingCards := dealCards(cards, 3)
+	greeting := "Hi there"
 
-	// cards.print()
-	hand.print()
-	remainingCards.print()
+	println([]byte(greeting))
 }
